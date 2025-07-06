@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #1e392a;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1603297631942-2f6a4470be6a') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(30, 57, 42, 0.8);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #7bc78f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.products, .why, .contact, .about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.why ul {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1.1em;
+}
+
+footer {
+  background: #1e392a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.livraison-rapide {
+  background: #e0ffe0;
+  padding: 30px;
+  margin: 40px 0;
+  border-left: 5px solid #2e7d32;
+  text-align: center;
+}
+
+.livraison-rapide h3 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.livraison-rapide a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1e392a;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact button.btn {
+  align-self: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
