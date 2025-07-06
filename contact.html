@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos - GreenZen</title>
+  <title>Contact - GreenZen</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Snipcart CSS -->
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3/default/snipcart.css">
@@ -25,10 +25,23 @@
       </nav>
     </div>
   </header>
-  <section class="about">
-    <h2>À propos de GreenZen</h2>
-    <p>GreenZen est dédié à offrir des fleurs de CBD de la plus haute qualité, cultivées de manière biologique et écoresponsable. Notre mission est de fournir des produits légaux et testés en laboratoire, avec une livraison rapide et discrète partout en France.</p>
-    <p>Nous croyons en la transparence, la durabilité et le bien-être de nos clients. Découvrez notre sélection et rejoignez notre communauté pour une expérience CBD naturelle et apaisante.</p>
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <form action="mailto:contact@greenzen.fr" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
   </section>
   <footer>
     <p>© 2025 GreenZen - CBD légal en France</p>
