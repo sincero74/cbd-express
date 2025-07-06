@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier - GreenZen</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Snipcart CSS -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3/default/snipcart.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🌿 GreenZen</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="snipcart-checkout snipcart-summary">
+            <span class="snipcart-items-count"></span> 🛒
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="cart">
+    <h2>Votre Panier</h2>
+    <div class="snipcart-cart">
+      <div class="snipcart-cart__items">
+        <!-- Snipcart will populate cart items here -->
+        <div class="snipcart-cart__empty" data-snipcart-empty>
+          <p>Votre panier est vide. <a href="products.html">Retourner à la boutique</a>.</p>
+        </div>
+        <div class="snipcart-cart__content" data-snipcart-content>
+          <!-- Snipcart cart items will be dynamically inserted -->
+        </div>
+      </div>
+      <div class="snipcart-cart__summary">
+        <p>Total: <span class="snipcart-total-price"></span></p>
+        <button class="btn snipcart-checkout">Passer à la caisse</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 GreenZen - CBD légal en France</p>
+  </footer>
+  <!-- Snipcart JavaScript -->
+  <script async src="https://cdn.snipcart.com/themes/v3/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_ACTUAL_SNIPCART_API_KEY" data-config-modal-style="side"></div>
+</body>
+</html>
