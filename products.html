@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produits - GreenZen</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Snipcart CSS -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css">
 </head>
 <body>
   <header>
@@ -16,39 +18,85 @@
           <li><a href="products.html">Produits</a></li>
           <li><a href="about.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" class="snipcart-checkout snipcart-summary">
+            <span class="snipcart-items-count"></span> Panier
+          </a></li>
         </ul>
       </nav>
     </div>
   </header>
-
   <section class="products">
     <h2>Nos Meilleures Fleurs CBD</h2>
     <div class="product-list">
       <div class="product-card">
         <h3>Fleurs CBD Sour Diesel</h3>
         <p>Indoor • 3g • Puissant et aromatique</p>
-        <a href="#" class="btn">Découvrir</a>
+        <p>Prix: 15,00 €</p>
+        <button class="btn snipcart-add-item"
+                data-item-id="sour-diesel"
+                data-item-price="15.00"
+                data-item-url="/products.html"
+                data-item-name="Fleurs CBD Sour Diesel"
+                data-item-description="Indoor, 3g, Puissant et aromatique"
+                data-item-weight="3"
+                data-item-shippable="true">
+          Ajouter au panier
+        </button>
       </div>
       <div class="product-card">
         <h3>Fleurs CBD Amnesia Haze</h3>
         <p>Greenhouse • 5g • Énergisant</p>
-        <a href="#" class="btn">Découvrir</a>
+        <p>Prix: 25,00 €</p>
+        <button class="btn snipcart-add-item"
+                data-item-id="amnesia-haze"
+                data-item-price="25.00"
+                data-item-url="/products.html"
+                data-item-name="Fleurs CBD Amnesia Haze"
+                data-item-description="Greenhouse, 5g, Énergisant"
+                data-item-weight="5"
+                data-item-shippable="true">
+          Ajouter au panier
+        </button>
       </div>
       <div class="product-card">
         <h3>Fleurs CBD OG Kush</h3>
         <p>Outdoor • 10g • Relaxant</p>
-        <a href="#" class="btn">Découvrir</a>
+        <p>Prix: 40,00 €</p>
+        <button class="btn snipcart-add-item"
+                data-item-id="og-kush"
+                data-item-price="40.00"
+                data-item-url="/products.html"
+                data-item-name="Fleurs CBD OG Kush"
+                data-item-description="Outdoor, 10g, Relaxant"
+                data-item-weight="10"
+                data-item-shippable="true">
+          Ajouter au panier
+        </button>
       </div>
       <div class="product-card">
         <h3>Feuilles OCB</h3>
         <p>Slim Premium • 32 feuilles • Qualité supérieure</p>
-        <a href="#" class="btn">Découvrir</a>
+        <p>Prix: 2,00 €</p>
+        <button class="btn snipcart-add-item"
+                data-item-id="ocb-feuilles"
+                data-item-price="2.00"
+                data-item-url="/products.html"
+                data-item-name="Feuilles OCB"
+                data-item-description="Slim Premium, 32 feuilles, Qualité supérieure"
+                data-item-weight="10"
+                data-item-shippable="true">
+          Ajouter au panier
+        </button>
       </div>
     </div>
   </section>
-
   <footer>
     <p>© 2025 GreenZen - CBD légal en France</p>
   </footer>
+  <!-- Snipcart JavaScript -->
+  <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY"
+       data-config-modal-style="side">
+  </div>
 </body>
 </html>
