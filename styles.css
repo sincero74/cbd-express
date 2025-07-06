@@ -79,7 +79,7 @@ nav a:hover {
   background: #2e7d32;
 }
 
-.products, .why, .contact, .about {
+.products, .why, .contact, .about, .cart {
   padding: 50px 20px;
   text-align: center;
 }
@@ -183,6 +183,7 @@ footer {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em; /* Larger icon size */
 }
 
 .snipcart-items-count {
@@ -194,6 +195,30 @@ footer {
   position: absolute;
   top: -10px;
   right: -10px;
+}
+
+.cart .snipcart-cart {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cart .snipcart-cart__empty {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.cart .snipcart-cart__summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart .snipcart-cart__summary p {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #snipcart .snipcart-cart__content {
