@@ -1,101 +1,188 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
   color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 header {
-  background-color: #2e7d32;
+  background: #1e392a;
   color: white;
-  padding: 1em 0;
-  text-align: center;
+  padding: 20px 0;
 }
 
-header h1 {
-  margin: 0;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.hero, .livraison-rapide, .why, .products, .about, .contact {
-  padding: 2em 0;
-  text-align: center;
+nav a:hover {
+  color: #7bc78f;
 }
 
 .hero {
-  background-color: #a5d6a7;
-}
-
-.livraison-rapide, .why {
-  background-color: #ffffff;
-}
-
-.product-list {
+  background: url('https://images.unsplash.com/photo-1603297631942-2f6a4470be6a') center/cover no-repeat;
+  height: 80vh;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 22%;
-  margin: 1%;
-  padding: 1em;
+.hero-content {
+  background: rgba(30, 57, 42, 0.8);
+  padding: 40px;
   text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #388e3c;
+  padding: 12px 25px;
+  background: #7bc78f;
   color: white;
-  text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
-  background-color: #2e7d32;
+  background: #2e7d32;
+}
+
+.products, .why, .contact, .about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.why ul {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1.1em;
 }
 
 footer {
-  background-color: #2e7d32;
+  background: #1e392a;
   color: white;
   text-align: center;
-  padding: 1em 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.livraison-rapide {
+  background: #e0ffe0;
+  padding: 30px;
+  margin: 40px 0;
+  border-left: 5px solid #2e7d32;
+  text-align: center;
+}
+
+.livraison-rapide h3 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.livraison-rapide a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1e392a;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact button.btn {
+  align-self: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1em;
 }
 
 /* Snipcart Cart Styles */
 .snipcart-checkout {
   position: relative;
-  display: inline-block;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .snipcart-items-count {
@@ -109,12 +196,9 @@ footer {
   right: -10px;
 }
 
-#snipcart {
-  font-family: Arial, sans-serif;
-}
-
 #snipcart .snipcart-cart__content {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
 }
